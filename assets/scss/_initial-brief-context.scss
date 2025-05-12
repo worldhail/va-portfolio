@@ -1,0 +1,7 @@
+.brief-context {
+    font-size: 1.5rem;
+    transform: scale(.8);
+    transition: transform .8s ease-in-out;
+}
+
+.brief-context-scaleUp { transform: scale(1); }
