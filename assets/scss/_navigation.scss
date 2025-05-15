@@ -36,6 +36,7 @@
     top: 50px;
     border-radius: 10px;
     box-shadow: -2px 2px 20px lightgray;
+    background-color: white;
     transform: translate(100px, -140px) scale(.15);
     opacity: 0;
     transition: all .2s ease-in-out;
@@ -48,6 +49,7 @@
 .open-menu {
     transform: translate(0, 0) scale(1);
     opacity: 1;
+    z-index: 1;
 }
 
 .logo {
