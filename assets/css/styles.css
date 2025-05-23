@@ -93,6 +93,102 @@
   transform: scale(1);
 }
 
+.experience-container {
+  background-color: #fffcf8;
+}
+
+.experience-heading {
+  padding: 20px 0 40px;
+}
+
+.job-container {
+  border-left: 3px solid #e6e6e6;
+  border-radius: 3px 0 0 0;
+  margin-top: -20px;
+}
+
+.job-title {
+  margin-bottom: 0;
+  font-size: large;
+  font-weight: 400;
+  position: relative;
+}
+.job-title::before {
+  content: "";
+  height: 3px;
+  width: 20px;
+  background-color: #e6e6e6;
+  position: absolute;
+  top: 10px;
+  left: -27px;
+}
+
+.job-background {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  color: rgb(93, 93, 93);
+}
+
+.job-brief-description {
+  margin-top: 8px;
+  padding-bottom: 40px;
+}
+
 header {
   height: 60px;
+}
+
+.content-heading {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.skills-heading {
+  padding: 20px 0 20px;
+}
+
+.skills-container {
+  padding: 30px;
+  margin: 20px 0;
+  border-radius: 15px;
+  box-shadow: 0 1px 20px lightgray;
+  background-color: white;
+}
+.skills-container h6 {
+  font-size: 1.1rem;
+  text-indent: 10px;
+  margin-bottom: 20px;
+}
+.skills-container li {
+  list-style: none;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.skills-container-no-description {
+  padding: 30px;
+  margin: 20px 0;
+  border-radius: 15px;
+  box-shadow: -2px 2px 20px lightgray;
+  background-color: white;
+}
+.skills-container-no-description h6 {
+  font-size: 1.1rem;
+  text-indent: 10px;
+  margin-bottom: 20px;
+}
+.skills-container-no-description li {
+  list-style: none;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.bi-check2-circle {
+  color: green;
+  position: absolute;
+  left: -22px;
+}
+
+strong {
+  font-weight: 600;
 }
