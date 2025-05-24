@@ -1,6 +1,7 @@
 @use 'navigation';
 @use 'initial-brief-context';
 @use 'experience';
+@use 'contact-section';
 
 header {
     height: 60px;
@@ -19,7 +20,7 @@ header {
     padding: 30px;
     margin: 20px 0;
     border-radius: 15px;
-    box-shadow: 0 1px 20px lightgray;
+    // box-shadow: 0 1px 20px lightgray;
     background-color: white;
 
     h6 {
@@ -39,8 +40,8 @@ header {
     padding: 30px;
     margin: 20px 0;
     border-radius: 15px;
-    box-shadow: -2px 2px 20px lightgray;
-    background-color: white;
+    // box-shadow: -2px 2px 20px lightgray;
+    // background-color: #f4f4f4;
     
     h6 {
         font-size: 1.1rem;
