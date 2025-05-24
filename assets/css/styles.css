@@ -220,3 +220,7 @@ header {
 strong {
   font-weight: 600;
 }
+
+.about-conatiner {
+  border-radius: 15px;
+}
