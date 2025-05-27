@@ -152,10 +152,10 @@
 
 .contact-information {
   border: 1px solid lightgrey;
-  border-radius: 25px;
-  padding: 180px 0 100px;
+  border-radius: 15px;
+  padding: 110px 0 50px;
   position: relative;
-  top: -110px;
+  top: -70px;
   z-index: 0;
 }
 .contact-information p {
@@ -163,6 +163,10 @@
 }
 .contact-information i {
   font-size: 1.1rem;
+}
+
+.contact-section {
+  background-color: #5f696e;
 }
 
 header {
@@ -221,6 +225,13 @@ strong {
   font-weight: 600;
 }
 
-.about-conatiner {
+.about-container {
   border-radius: 15px;
+  margin: 100px auto;
+}
+
+.about-section {
+  margin-bottom: -110px;
+  position: relative;
+  background-color: #233037;
 }

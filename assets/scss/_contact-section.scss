@@ -16,10 +16,10 @@
 
 .contact-information {
     border: 1px solid lightgrey;
-    border-radius: 25px;
-    padding: 180px 0 100px;
+    border-radius: 15px;
+    padding: 110px 0 50px;
     position: relative;
-    top: -110px;
+    top: -70px;
     z-index: 0;
     
     p {
@@ -29,4 +29,8 @@
     i {
         font-size: 1.1rem;
     }
+}
+
+.contact-section {
+    background-color: #5f696e;
 }
