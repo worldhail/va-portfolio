@@ -30,9 +30,8 @@
 }
 
 .menu-list {
-    width: 225px;
     position: absolute;
-    right: 0;
+    right: 50px;
     top: 50px;
     border-radius: 10px;
     box-shadow: -2px 2px 20px lightgray;
@@ -43,7 +42,9 @@
 
     .nav-link {
         color: rgb(89, 89, 89);
+        list-style: none;
     }
+
 }
 
 .open-menu {
@@ -53,7 +54,7 @@
 }
 
 .logo {
-    height: 108px;
+    min-height: 108px;
     transform: translate(15%, 25px);
     background: linear-gradient(to top, #ffb760, #ffffff 85%);
     border-radius: 0 0 8px 8px;
@@ -70,4 +71,37 @@
     50% { transform: rotate(20deg) }
     75% { transform: rotate(-10deg); }
     100% { transform: rotateY(160deg); }
+}
+
+@media (min-width: 992px) {
+    header {
+        height: 90px !important;
+        flex-direction: column; 
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .menu-list {
+            border-radius: 10px;
+            box-shadow: none;
+            background-color: transparent;
+            opacity: 1;
+            transform: translate(0, 0) scale(1);
+            flex-direction: row !important;
+            flex-wrap: nowrap !important;
+            top: 18px;
+            right: 5%;
+
+            .nav-link {
+                text-wrap: nowrap;
+            }
+    }
+
+    .logo {
+        align-self: start;
+        margin-left: 5%;
+        // transform: translate(10%, 15px);
+    }
 }

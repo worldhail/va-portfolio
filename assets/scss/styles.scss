@@ -5,23 +5,38 @@
 
 header {
     height: 60px;
+    position: fixed;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
 };
+
+.initial-context-section {
+    padding: 100px 0;
+}
 
 .content-heading {
     font-size: 2.4rem;
     font-weight: 400;
 }
 
+.skills-section {
+    background: url('../img/laptop-background.jpg') no-repeat bottom left 300px;
+    background-position: left 300px bottom -435px;
+    margin-bottom: 100px;
+}
+
 .skills-heading {
     padding:  20px 0 20px;
 }
 
-.skills-container{
+.skills-container {
     padding: 30px;
     margin: 20px 0;
     border-radius: 15px;
     // box-shadow: 0 1px 20px lightgray;
-    background-color: white;
+    background-color: rgba(240, 240, 240, 0.9);
 
     h6 {
         font-size: 1.1rem;
@@ -41,7 +56,8 @@ header {
     margin: 20px 0;
     border-radius: 15px;
     // box-shadow: -2px 2px 20px lightgray;
-    // background-color: #f4f4f4;
+    background-color: rgba(240, 240, 240, 0.9);
+    max-height: fit-content;
     
     h6 {
         font-size: 1.1rem;
