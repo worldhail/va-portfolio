@@ -14,11 +14,11 @@
         <link rel="stylesheet" href="/assets/css/styles.css">
     </head>
     <body>
-        <header class="d-flex justify-content-between align-items-center px-3 container-sm">
+        <header class="d-flex px-3 container-fluid">
             <div class="logo d-flex align-items-end pb-2 px-3">
                 <p class="m-0"><span class="shake-hi">Hi</span>, I'm Jeric <span>Chua</span></p>
             </div>
-            <nav class="d-flex position-relative">
+            <nav class="d-flex">
                 <ul class="menu-list nav flex-column p-2">
                     <li class="nav-item">
                         <a class="nav-link" href="#experience">Experience</a>
@@ -27,10 +27,10 @@
                         <a class="nav-link" href="#skills">Skills To Offer</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Educational Background</a>
+                        <a class="nav-link" href="#educational-background">Educational Background</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -44,9 +44,9 @@
             </nav>
         </header>
         <main>
-            <section class="pb-5">
+            <section class="initial-context-section">
                 <div class="container-md vh-100">
-                    <div class="col-md-6 ms-auto h-50 border">Photo</div>
+                    <div class="col-md-6 ms-auto h-50 border initial-context-placeholder">Photo</div>
                     <div class="col-md-6 h-50 border">
                         <p class="brief-context text-center">
                             Ready to dive in to remote administrative roles and provide exceptional
@@ -55,7 +55,7 @@
                     </div>
                 </div>
             </section>
-            <section class="experience-container pb-5">
+            <section class="experience-container pb-5" id="experience">
                 <div class="container-md px-4">  
                     <h1 class="content-heading experience-heading">Experience</h1> 
                     <div class="job-container ps-3">
@@ -96,83 +96,90 @@
                     </div>
                 </div>
             </section>
-            <section class="skills-section pb-5">
+            <section class="skills-section pb-5" id="skills">
+                <div class="skills-image-background"></div>
                 <div class="container-md">
                     <h1 class="content-heading skills-heading">Skills To Offer</h1>
-                    <div class="skills-container">
-                        <h6>Administrative Skills</h6>
-                        <ul>
-                            <li><i class="bi bi-check2-circle"></i><strong>Email & Inbox Management:</strong> Organized and responded to high volumes of 
-                                client emails, managed follow-ups, flagged priority items, and 
-                                maintained inbox cleanliness.</li>
-                            <li><i class="bi bi-check2-circle"></i><strong>Contact Support:</strong> Delivered professional support via calls, emails, SMS,
-                                and chat across various industries (hospitality, e-commerce, etc.).</li>
-                            <li><i class="bi bi-check2-circle"></i><strong>Review & Reputation Management:</strong> Handled guest feedback and managed
-                                online reviews to protect brand reputation and encourage repeat business.</li>
-                            <li><i class="bi bi-check2-circle"></i><strong>Order Tracking & Issue Monitoring:</strong> Monitored guest concerns and order issues,
-                                coordinated resolutions between internal teams and customers.</li>
-                            <li><i class="bi bi-check2-circle"></i><strong>Data Entry & Record Validation:</strong> Accurately entered, validated, and maintain
-                                customer data using spreadsheets and internal tools.</li>
-                            <li><i class="bi bi-check2-circle"></i><strong>Documentation & File Management:</strong> Created, updated, and organized digital files
-                                and documents for customer and internal use.</li>
-                            <li><i class="bi bi-check2-circle"></i><strong>Onboarding & Training Support:</strong> Helped coach new hires, provided QA guidance,
-                                and assisted with rollout of process documentation.</li>
-                            <li><i class="bi bi-check2-circle"></i><strong>Reporting & Admin Tasks:</strong> Assisted in evaluating transactions and compiling
-                                reports related to agent performance and customer feedback.</li>
-                        </ul>
+                    <div class="row">
+                        <div class="skills-container col-md-6">
+                            <h6>Administrative Skills</h6>
+                            <ul>
+                                <li><i class="bi bi-check2-circle"></i><strong>Email & Inbox Management:</strong> Organized and responded to high volumes of 
+                                    client emails, managed follow-ups, flagged priority items, and 
+                                    maintained inbox cleanliness.</li>
+                                <li><i class="bi bi-check2-circle"></i><strong>Contact Support:</strong> Delivered professional support via calls, emails, SMS,
+                                    and chat across various industries (hospitality, e-commerce, etc.).</li>
+                                <li><i class="bi bi-check2-circle"></i><strong>Review & Reputation Management:</strong> Handled guest feedback and managed
+                                    online reviews to protect brand reputation and encourage repeat business.</li>
+                                <li><i class="bi bi-check2-circle"></i><strong>Order Tracking & Issue Monitoring:</strong> Monitored guest concerns and order issues,
+                                    coordinated resolutions between internal teams and customers.</li>
+                                <li><i class="bi bi-check2-circle"></i><strong>Data Entry & Record Validation:</strong> Accurately entered, validated, and maintain
+                                    customer data using spreadsheets and internal tools.</li>
+                                <li><i class="bi bi-check2-circle"></i><strong>Documentation & File Management:</strong> Created, updated, and organized digital files
+                                    and documents for customer and internal use.</li>
+                                <li><i class="bi bi-check2-circle"></i><strong>Onboarding & Training Support:</strong> Helped coach new hires, provided QA guidance,
+                                    and assisted with rollout of process documentation.</li>
+                                <li><i class="bi bi-check2-circle"></i><strong>Reporting & Admin Tasks:</strong> Assisted in evaluating transactions and compiling
+                                    reports related to agent performance and customer feedback.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5 ms-auto d-flex flex-column justify-content-evenly">
+                            <div class="skills-container-no-description">
+                                <h6>Creative & Media Skills</h6>
+                                <ul>
+                                    <li><i class="bi bi-check2-circle"></i>Basic photo and video editing (Canva, Photoshop, capcut)</li>
+                                    <li><i class="bi bi-check2-circle"></i>Formatting and document design</li>
+                                    <li><i class="bi bi-check2-circle"></i>Preparing social media posts or banners</li>
+                                </ul>
+                            </div>
+                            <div class="skills-container-no-description">
+                                <h6>Personal/Soft Skills</h6>
+                                <ul>
+                                    <li><i class="bi bi-check2-circle"></i>Strong written and verbal communication</li>
+                                    <li><i class="bi bi-check2-circle"></i>Time management and task prioritization</li>
+                                    <li><i class="bi bi-check2-circle"></i>Problem-solving and critical thinking</li>
+                                    <li><i class="bi bi-check2-circle"></i>Empathy and emotional intelligence</li>
+                                    <li><i class="bi bi-check2-circle"></i>Able to work with minimal supervision</li>
+                                    <li><i class="bi bi-check2-circle"></i>Follow rules and instructions with integrity</li>
+                                    <li><i class="bi bi-check2-circle"></i>Staying calm and very patient</li>
+                                    <li><i class="bi bi-check2-circle"></i>Delivering quality results</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skills-container">
-                        <h6>Technical Skills</h6>
-                        <ul>
-                            <li><i class="bi bi-check2-circle"></i><strong>Basic Web Development:</strong> Able to build and edit static websites using HTML and CSS;
-                                familiar with JavaScript basics. (self-taught)</li>
-                            <li><i class="bi bi-check2-circle"></i><strong>Frontend & Backend Workflow Understanding:</strong> Understands how websites and web apps
-                                function from both user-facing and server-side perspectives.</li>
-                            <li><i class="bi bi-check2-circle"></i><strong>Light Photo & Document Editing:</strong> Experienced in basic photo editing and document
-                                formatting (e.g., using Microsoft Office or Google Sheets, Canva, or similar tools).</li>
-                            <li><i class="bi bi-check2-circle"></i><strong>Content Formatting & Encoding:</strong> Assisted in preparing digital content for printing including
-                                encoding documents and formatting layouts.</li>
-                            <li><i class="bi bi-check2-circle"></i><strong>Third-party Platform Handling:</strong> Skilled in managing reservations, user data, and operations manager
-                                interactions through platforms like Airbnb, Booking.com, Expedia, VRBO, and Marriott’s Homes & Villas.</li>
-                        </ul>
-                    </div>
-                    <div class="skills-container-no-description">
-                        <h6>Digital Tools & Platform Skills</h6>
-                        <ul>
-                            <li><i class="bi bi-check2-circle"></i>Visual Studio Code</li>
-                            <li><i class="bi bi-check2-circle"></i>Google Chrome DevTools</li>
-                            <li><i class="bi bi-check2-circle"></i>HTML, CSS, Javascript</li>
-                            <li><i class="bi bi-check2-circle"></i>Github, git, Node JS, MongoDB</li>
-                            <li><i class="bi bi-check2-circle"></i>Google Workspace (Gmail, Sheets, Docs, Calendar)</li>
-                            <li><i class="bi bi-check2-circle"></i>Microsoft Office (Word, Excel, Outlook)</li>
-                            <li><i class="bi bi-check2-circle"></i>Trip Manager Portals</li>
-                            <li><i class="bi bi-check2-circle"></i>Zoom, Slack, Google Meet</li>
-                        </ul>
-                    </div>
-                    <div class="skills-container-no-description">
-                        <h6>Creative & Media Skills</h6>
-                        <ul>
-                            <li><i class="bi bi-check2-circle"></i>Basic photo and video editing (Canva, Photoshop, capcut)</li>
-                            <li><i class="bi bi-check2-circle"></i>Formatting and document design</li>
-                            <li><i class="bi bi-check2-circle"></i>Preparing social media posts or banners</li>
-                        </ul>
-                    </div>
-                    <div class="skills-container-no-description">
-                        <h6>Personal/Soft Skills</h6>
-                        <ul>
-                            <li><i class="bi bi-check2-circle"></i>Strong written and verbal communication</li>
-                            <li><i class="bi bi-check2-circle"></i>Time management and task prioritization</li>
-                            <li><i class="bi bi-check2-circle"></i>Problem-solving and critical thinking</li>
-                            <li><i class="bi bi-check2-circle"></i>Empathy and emotional intelligence</li>
-                            <li><i class="bi bi-check2-circle"></i>Able to work with minimal supervision</li>
-                            <li><i class="bi bi-check2-circle"></i>Follow rules and instructions with integrity</li>
-                            <li><i class="bi bi-check2-circle"></i>Staying calm and very patient</li>
-                            <li><i class="bi bi-check2-circle"></i>Delivering quality results</li>
-                        </ul>
+                    <div class="row mx-1">
+                        <div class="skills-container col-md-6">
+                            <h6>Technical Skills</h6>
+                            <ul>
+                                <li><i class="bi bi-check2-circle"></i><strong>Basic Web Development:</strong> Able to build and edit static websites using HTML and CSS;
+                                    familiar with JavaScript basics. (self-taught)</li>
+                                <li><i class="bi bi-check2-circle"></i><strong>Frontend & Backend Workflow Understanding:</strong> Understands how websites and web apps
+                                    function from both user-facing and server-side perspectives.</li>
+                                <li><i class="bi bi-check2-circle"></i><strong>Light Photo & Document Editing:</strong> Experienced in basic photo editing and document
+                                    formatting (e.g., using Microsoft Office or Google Sheets, Canva, or similar tools).</li>
+                                <li><i class="bi bi-check2-circle"></i><strong>Content Formatting & Encoding:</strong> Assisted in preparing digital content for printing including
+                                    encoding documents and formatting layouts.</li>
+                                <li><i class="bi bi-check2-circle"></i><strong>Third-party Platform Handling:</strong> Skilled in managing reservations, user data, and operations manager
+                                    interactions through platforms like Airbnb, Booking.com, Expedia, VRBO, and Marriott’s Homes & Villas.</li>
+                            </ul>
+                        </div>
+                        <div class="skills-container-no-description col-md-5 align-self-center ms-auto">
+                            <h6>Digital Tools & Platform Skills</h6>
+                            <ul>
+                                <li><i class="bi bi-check2-circle"></i>Visual Studio Code</li>
+                                <li><i class="bi bi-check2-circle"></i>Google Chrome DevTools</li>
+                                <li><i class="bi bi-check2-circle"></i>HTML, CSS, Javascript</li>
+                                <li><i class="bi bi-check2-circle"></i>Github, git, Node JS, MongoDB</li>
+                                <li><i class="bi bi-check2-circle"></i>Google Workspace (Gmail, Sheets, Docs, Calendar)</li>
+                                <li><i class="bi bi-check2-circle"></i>Microsoft Office (Word, Excel, Outlook)</li>
+                                <li><i class="bi bi-check2-circle"></i>Trip Manager Portals</li>
+                                <li><i class="bi bi-check2-circle"></i>Zoom, Slack, Google Meet</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="pb-5">
+            <section class="pb-5" id="educational-background">
                 <div class="container-md">
                     <h1 class="content-heading">Educational Background</h1>
                     <div>
@@ -183,7 +190,7 @@
                     </div>
                 </div> 
             </section>
-            <section class="about-section py-5 px-3">
+            <section class="about-section py-5 px-3" id="about">
                 <div class="about-container col-sm-6 bg-light mx-auto py-5 px-4">
                     <p class="about-me">
                         I am a highly driven and detail-oriented individual with a strong background
@@ -195,7 +202,7 @@
                     </p>
                 </div>
             </section>
-            <section class="text-light contact-section py-5">
+            <section class="text-light contact-section py-5" id="contact">
                 <div class="container-md">
                     <div class="map-placeholder text-center mx-4">
                         <div class="darken-background"></div>
