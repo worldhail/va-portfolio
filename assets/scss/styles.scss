@@ -3,6 +3,11 @@
 @use 'experience';
 @use 'contact-section';
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 110px;
+}
+
 header {
     height: 60px;
     position: fixed;

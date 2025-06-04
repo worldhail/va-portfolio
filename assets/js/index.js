@@ -11,3 +11,9 @@ const briefContext = document.querySelector('.brief-context');
 window.addEventListener('DOMContentLoaded', () => {
     briefContext.classList.add('brief-context-scaleUp');
 });
+
+// LOGO SLIDE UP
+const logo = document.querySelector('.logo');
+window.addEventListener('scroll', () => {
+    window.scrollY > 100 ? logo.classList.add('logo-slideUp') : logo.classList.remove('logo-slideUp');
+});

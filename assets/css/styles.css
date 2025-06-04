@@ -60,10 +60,16 @@
   transform: translate(15%, 25px);
   background: linear-gradient(to top, #ffb760, #ffffff 85%);
   border-radius: 0 0 8px 8px;
+  transition: all 1s ease-in-out;
 }
 .logo .shake-hi {
   display: inline-block;
   animation: shake 1s ease-in-out;
+}
+
+.logo-slideUp {
+  padding-bottom: 18px !important;
+  transform: translate(15%, -25px);
 }
 
 @keyframes shake {
@@ -108,6 +114,10 @@
   .logo {
     align-self: start;
     margin-left: 5%;
+  }
+  .logo-slideUp {
+    padding-bottom: 32px !important;
+    transform: translate(10%, -18px);
   }
 }
 .brief-context {
@@ -194,6 +204,11 @@
 
 .contact-section {
   background-color: #5f696e;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 110px;
 }
 
 header {
