@@ -1,7 +1,58 @@
+.initial-context-section {
+    background: url('../img/brief-context-photo.jpg') no-repeat content-box 90% 80%;
+    background-size: 150%;
+    background-color: black;
+    padding: 60px 0;
+}
+
+.brief-context-container {
+    width: 60%;
+    max-width: 500px;
+    padding: 30px 30px 15px 30px;
+    margin: 70px 20% auto 0;
+    border-radius: 90px 90px 5px 90px;
+    background-color: red;
+
+}
+
 .brief-context {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     transform: scale(.8);
     transition: transform .8s ease-in-out;
 }
 
 .brief-context-scaleUp { transform: scale(1);}
+
+@media (min-width: 576px) {
+    .initial-context-section {
+        background-position: 80% 80%;
+    }
+
+    .brief-context-container {
+        padding: 40px 40px 25px 40px;
+    }
+
+    .brief-context {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .brief-context {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .initial-context-section {
+        background-size: cover;
+    }
+
+    .brief-context {
+        font-size: 1.5rem;
+    }
+
+    .brief-context-container {
+        margin: 190px 20% auto 5%;
+    }
+}
