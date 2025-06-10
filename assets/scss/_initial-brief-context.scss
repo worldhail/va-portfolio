@@ -1,8 +1,8 @@
 .initial-context-section {
-    background: url('../img/brief-context-photo.jpg') no-repeat content-box 90% 80%;
-    background-size: 150%;
-    background-color: black;
-    padding: 60px 0;
+    background: url('../img/front-page-photo.jpg') no-repeat content-box 95% 50%;
+    background-size: 180%;
+    padding: 60px 0 0;
+    background-color: #b8b4af;
 }
 
 .brief-context-container {
@@ -11,8 +11,7 @@
     padding: 30px 30px 15px 30px;
     margin: 70px 20% auto 0;
     border-radius: 90px 90px 5px 90px;
-    background-color: red;
-
+    background-color: #8d9ab3;
 }
 
 .brief-context {
@@ -24,10 +23,6 @@
 .brief-context-scaleUp { transform: scale(1);}
 
 @media (min-width: 576px) {
-    .initial-context-section {
-        background-position: 80% 80%;
-    }
-
     .brief-context-container {
         padding: 40px 40px 25px 40px;
     }
@@ -45,11 +40,12 @@
 
 @media (min-width: 992px) {
     .initial-context-section {
-        background-size: cover;
+        background-size: 130%;
+        background-position: 110% 150%;
     }
 
     .brief-context {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .brief-context-container {

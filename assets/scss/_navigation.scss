@@ -10,7 +10,7 @@
     .m-line {
         height: 4px;
         border-radius: 2px;
-        background-color: darkgray;
+        background-color: rgb(46, 46, 46);
     }
 
     .l1 { width: 15px; transition: transform .2s ease-in-out; }
@@ -34,14 +34,15 @@
     right: 50px;
     top: 50px;
     border-radius: 10px;
-    box-shadow: -2px 2px 20px lightgray;
-    background-color: white;
+    // box-shadow: -2px 2px 20px lightgray;
+    background-color: rgba(0, 0, 0, 0.687);
     transform: translate(100px, -140px) scale(.15);
     opacity: 0;
     transition: all .2s ease-in-out;
 
     .nav-link {
-        color: rgb(89, 89, 89);
+        color: white;
+        // color: rgb(68, 68, 68);
         list-style: none;
     }
 
@@ -56,9 +57,10 @@
 .logo {
     min-height: 108px;
     transform: translate(15%, 25px);
-    background: linear-gradient(to top, #ffb760, #ffffff 85%);
+    background: linear-gradient(to top, #d0c8b96f , #b8b4af41 85%);
     border-radius: 0 0 8px 8px;
     transition: all 1s ease-in-out;
+    color: rgb(68, 68, 68);
 
     .shake-hi {
         display: inline-block;
@@ -68,7 +70,7 @@
 
 .logo-slideUp {
     padding-bottom: 18px !important;
-    transform: translate(15%, -25px);
+    transform: translate(15%, -24px);
 }
 
 @keyframes shake {
@@ -101,6 +103,7 @@
             right: 5%;
 
             .nav-link {
+                color: rgb(68, 68, 68); 
                 text-wrap: nowrap;
             }
     }

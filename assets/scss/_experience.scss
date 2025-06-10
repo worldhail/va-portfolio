@@ -1,5 +1,11 @@
 .experience-container {
-    background-color: #fffcf8;
+    background-color: white;
+}
+
+.top-liner {
+    width: 100%;
+    position: relative;
+    top: 0px;
 }
 
 .experience-heading {
@@ -7,7 +13,7 @@
 }
 
 .job-container {
-    border-left: 3px solid #e6e6e6;
+    border-left: 3px solid #afb8b8;
     border-radius: 3px 0 0 0;
     margin-top: -20px;
 }
@@ -22,7 +28,7 @@
         content: '';
         height: 3px;
         width: 20px;
-        background-color: #e6e6e6;
+        background-color: #afb8b8;
         position: absolute;
         top: 10px;
         left: -27px;
