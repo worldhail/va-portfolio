@@ -1,0 +1,40 @@
+.skills-section {
+    background: url('../img/skills-background.jpg') no-repeat center 20%;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.skills-heading {
+    padding: 50px 10px 20px;
+}
+
+.skills-container {
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 15px;
+    background-color: #afb3b861;
+    max-height: fit-content;
+
+    h6 {
+        font-size: 1.1rem;
+        text-indent: 10px;
+        margin-bottom: 20px;
+    }
+
+    li {
+        list-style: none;
+        position: relative;
+        margin-bottom: 10px;
+    }
+}
+
+.bi-check2-circle {
+    color: green;
+    position: absolute;
+    left: -22px;
+}
+
+strong {
+    font-weight: 600;
+}
+
