@@ -3,6 +3,7 @@
 @use 'experience';
 @use 'skills-section';
 @use 'contact-section';
+@use 'about-section';
 
 html {
     scroll-behavior: smooth;
@@ -23,13 +24,8 @@ header {
     font-weight: 400;
 }
 
-.about-container {
-    border-radius: 15px;
-    margin: 100px auto;
-}
-
-.about-section {
-    margin-bottom: -110px;
+#educational-background {
+    padding: 50px 20px;
     position: relative;
-    background-color: #233037;
+    z-index: 0;
 }

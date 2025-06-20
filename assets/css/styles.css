@@ -222,7 +222,6 @@
 .skills-section {
   background: url("../img/skills-background.jpg") no-repeat center 20%;
   background-size: cover;
-  margin-bottom: 100px;
 }
 
 .skills-heading {
@@ -292,6 +291,48 @@ strong {
   background-color: #5f696e;
 }
 
+.about-section {
+  margin-bottom: -110px;
+  position: relative;
+  background-color: #1d1d1d;
+  overflow: hidden;
+}
+
+.about-container {
+  position: relative;
+  border-radius: 10px;
+  margin: 0 auto 100px;
+  top: -50px;
+  rotate: -5deg;
+  background-color: rgba(175, 179, 184, 0.4078431373);
+}
+
+.about-me-photo {
+  width: 70%;
+  max-width: 350px;
+  background: linear-gradient(145deg, #b8b4af, #1d1d1d);
+}
+
+.about-me {
+  background-color: rgb(251, 251, 251);
+  rotate: 5deg;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.about-photo-placeholder {
+  position: relative;
+  top: 0;
+}
+
+.about-me-signature {
+  width: 40%;
+  position: absolute;
+  max-width: 200px;
+  bottom: 40%;
+  right: 60%;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 110px;
@@ -311,13 +352,8 @@ header {
   font-weight: 400;
 }
 
-.about-container {
-  border-radius: 15px;
-  margin: 100px auto;
-}
-
-.about-section {
-  margin-bottom: -110px;
+#educational-background {
+  padding: 50px 20px;
   position: relative;
-  background-color: #233037;
+  z-index: 0;
 }
