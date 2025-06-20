@@ -256,29 +256,10 @@ strong {
   font-weight: 600;
 }
 
-.map-placeholder {
-  background: url("../img/contact-details-background1.jpg") no-repeat content-box center;
-  background-size: cover;
-  position: relative;
-  z-index: 1;
-}
-
-.darken-background {
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .contact-information {
   border: 1px solid lightgrey;
   border-radius: 15px;
-  padding: 110px 0 50px;
-  position: relative;
-  top: -70px;
-  z-index: 0;
+  padding: 50px 0 50px;
 }
 .contact-information p {
   line-height: 0.5;
@@ -288,11 +269,11 @@ strong {
 }
 
 .contact-section {
-  background-color: #5f696e;
+  padding: 30px 0 100px;
+  background-color: #5a615b;
 }
 
 .about-section {
-  margin-bottom: -110px;
   position: relative;
   background-color: #1d1d1d;
   overflow: hidden;
@@ -301,7 +282,7 @@ strong {
 .about-container {
   position: relative;
   border-radius: 10px;
-  margin: 0 auto 100px;
+  margin: auto;
   top: -50px;
   rotate: -5deg;
   background-color: rgba(175, 179, 184, 0.4078431373);
