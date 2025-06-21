@@ -156,6 +156,9 @@
   }
 }
 @media (min-width: 768px) {
+  .initial-context-section {
+    background-size: 150%;
+  }
   .brief-context {
     font-size: 1.3rem;
   }
@@ -337,4 +340,19 @@ header {
   padding: 50px 20px;
   position: relative;
   z-index: 0;
+}
+
+.qoute-section {
+  background-color: #5a615b;
+  color: white;
+  font-size: 0.8rem;
+}
+
+footer {
+  background-color: #5a615b;
+  margin-top: -20px;
+}
+footer p {
+  padding: 10px 20px 30px;
+  margin: 0;
 }
