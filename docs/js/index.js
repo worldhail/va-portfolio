@@ -1,17 +1,20 @@
 // MENU BUTTON EVENT LISTENER
 const menuBtn = document.querySelector('.menu-btn');
 const menuList = document.querySelector('.menu-list');
+let menuIsOn = '';
 menuBtn.addEventListener('click', () => {
+    menuIsOn = true;
     menuList.classList.toggle('open-menu');
     menuBtn.classList.toggle('slide-menu-btn');
 });
 
 //MENU LIST ITEMS ARE SHOWN
-window.addEventListener('click', () => {
-    if (menuList.classList.contains('open-menu')) {
-        console.log('okay')
+const navLink = document.querySelectorAll('.nav-link');
+window.addEventListener('click', (e) => {
+    if (e.target !== menuBtn && menuIsOn) {
         menuList.classList.remove('open-menu');
         menuBtn.classList.remove('slide-menu-btn');
+        menuIsOn = false;
     }
 });
 
