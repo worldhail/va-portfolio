@@ -6,6 +6,15 @@ menuBtn.addEventListener('click', () => {
     menuBtn.classList.toggle('slide-menu-btn');
 });
 
+//MENU LIST ITEMS ARE SHOWN
+window.addEventListener('click', () => {
+    if (menuList.classList.contains('open-menu')) {
+        console.log('okay')
+        menuList.classList.remove('open-menu');
+        menuBtn.classList.remove('slide-menu-btn');
+    }
+});
+
 // INITIAL BRIEF CONTEXT ON THE FRON PAGE
 const briefContext = document.querySelector('.brief-context');
 window.addEventListener('DOMContentLoaded', () => {
