@@ -110,10 +110,14 @@
     flex-wrap: nowrap !important;
     top: 18px;
     right: 5%;
+    pointer-events: auto;
   }
   .menu-list .nav-link {
     color: rgb(68, 68, 68);
     text-wrap: nowrap;
+  }
+  .menu-list .nav-link:hover {
+    color: #5a615b;
   }
   .logo {
     align-self: start;

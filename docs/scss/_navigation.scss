@@ -45,7 +45,6 @@
         color: white;
         list-style: none;
     }
-
 }
 
 .open-menu {
@@ -102,10 +101,15 @@
             flex-wrap: nowrap !important;
             top: 18px;
             right: 5%;
+            pointer-events: auto;
 
             .nav-link {
                 color: rgb(68, 68, 68); 
                 text-wrap: nowrap;
+
+                &:hover {
+                    color: #5a615b;
+                }
             }
     }
 
