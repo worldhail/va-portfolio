@@ -185,15 +185,15 @@
 }
 @media (min-width: 992px) {
   .front-page-image {
-    max-width: 110%;
+    max-width: 100%;
     right: 5%;
-    bottom: -50px;
+    bottom: 0;
   }
   .brief-context {
     font-size: 1.6rem;
   }
   .brief-context-container {
-    margin: 0 20% auto 5%;
+    margin: 0 20% auto 10%;
   }
 }
 .experience-container {
