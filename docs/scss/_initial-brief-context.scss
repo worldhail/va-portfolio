@@ -10,6 +10,14 @@
     bottom: 100px;
     right: 3%;
     border-radius: 0 30px 30px 0;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.front-page-image-slideLeft {
+    transform: translateX(0);
+    opacity: 1;
+    transition: all .8s ease-in-out;
 }
 
 .brief-context-container {
@@ -22,6 +30,12 @@
     background-color: #8d9ab3;
     position: absolute;
     top: 150px;
+    opacity: 0;
+}
+
+.brief-context-container-show {
+    opacity: 1;
+    transition: opacity .8s ease-in-out;
 }
 
 .brief-context {

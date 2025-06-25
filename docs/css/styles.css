@@ -67,7 +67,8 @@
 }
 .logo .shake-hi {
   display: inline-block;
-  animation: shake 1s ease-in-out;
+  animation: shake 2s ease-in-out;
+  animation-delay: 3s;
 }
 
 .logo-slideUp {
@@ -80,7 +81,7 @@
     transform: translate(0, 0);
   }
   25% {
-    transform: translate(-5px);
+    transform: translate(-25px);
   }
   50% {
     transform: rotate(20deg);
@@ -140,6 +141,14 @@
   bottom: 100px;
   right: 3%;
   border-radius: 0 30px 30px 0;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.front-page-image-slideLeft {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 0.8s ease-in-out;
 }
 
 .brief-context-container {
@@ -152,6 +161,12 @@
   background-color: #8d9ab3;
   position: absolute;
   top: 150px;
+  opacity: 0;
+}
+
+.brief-context-container-show {
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
 }
 
 .brief-context {
