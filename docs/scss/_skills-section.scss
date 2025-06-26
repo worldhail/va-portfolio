@@ -1,6 +1,7 @@
 .skills-section {
     background: url('../img/skills-background.jpg') no-repeat center 20%;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 .skills-heading {
@@ -13,6 +14,7 @@
     border-radius: 15px;
     background-color: #afb3b861;
     max-height: fit-content;
+    opacity: 0;
 
     h6 {
         font-size: 1.1rem;
@@ -27,6 +29,11 @@
     }
 }
 
+.skills-container-inView {
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+
 .bi-check2-circle {
     color: green;
     position: absolute;
@@ -36,4 +43,12 @@
 strong {
     font-weight: 600;
 }
+@media (min-width: 768px) {
+    .administrative, .technical {
+        transform: translateX(-50%);
+    }
 
+    .media, .personal, .digital {
+        transform: translateX(50%);
+    }
+}

@@ -38,14 +38,25 @@ window.addEventListener('scroll', () => {
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            console.log('viewed')
+            const el = entry.target;
+
+            if (el.classList.contains('content-heading')) el.classList.add('content-heading-inView');
+            if (el.classList.contains('job-container')) el.classList.add('job-container-inView');
+            if (el.classList.contains('skills-container')) {
+                el.classList.add('skills-container-inView');
+                el.style.transform = 'translateX(0)';
+            }
+            if (el.classList.contains('about-section')) el.classList.add('about-section-inView');
+            if (el.classList.contains('contact-section')) el.classList.add('contact-section-inView');
         }
     })
 }, {
     root: null,
-    // rootMargin: '0px',
-    threshold: 0.1
+    rootMargin: '0px 0px -100px 0px',
+    threshold: .1
 });
 
-const target = document.querySelectorAll('section');
+const target = document.querySelectorAll(
+    '.content-heading, .job-container, .skills-container, .about-section, .contact-section'
+);
 target.forEach(section => observer.observe(section));

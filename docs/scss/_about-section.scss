@@ -9,19 +9,20 @@
     border-radius: 10px;
     margin: auto;
     top: -50px;
-    rotate: -5deg;
     background-color: #afb3b868;
+
 }
 
 .about-me-photo {
     width: 70%;
     max-width: 350px;
     background: linear-gradient(145deg, #b8b4af, #1d1d1d);
+    transform: translateY(30%);
+    opacity: 0;
 }
 
 .about-me {
     background-color: rgb(251, 251, 251);
-    rotate: 5deg;
     padding: 20px;
     border-radius: 5px;
 }
@@ -37,4 +38,30 @@
     max-width: 200px;
     bottom: 40%;
     right: 60%;
+    opacity: 0;
+}
+
+.about-section-inView .about-container { 
+    rotate: -5deg;
+    transition: rotate 1s ease-in-out;
+    transition-delay: 2s;
+    
+}
+
+.about-section-inView .about-me-photo {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease-in-out;
+}
+
+.about-section-inView .about-me-signature {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    transition-delay: .8s;
+}
+
+.about-section-inView .about-me {
+    rotate: 5deg;
+    transition: rotate 1s ease-in-out;
+    transition-delay: 2s;
 }

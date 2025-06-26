@@ -229,6 +229,12 @@
   border-left: 3px solid #afb8b8;
   border-radius: 3px 0 0 0;
   margin-top: -20px;
+  opacity: 0;
+}
+
+.job-container-inView {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
 }
 
 .job-title {
@@ -261,6 +267,7 @@
 .skills-section {
   background: url("../img/skills-background.jpg") no-repeat center 20%;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 .skills-heading {
@@ -273,6 +280,7 @@
   border-radius: 15px;
   background-color: rgba(175, 179, 184, 0.3803921569);
   max-height: fit-content;
+  opacity: 0;
 }
 .skills-container h6 {
   font-size: 1.1rem;
@@ -285,6 +293,11 @@
   margin-bottom: 10px;
 }
 
+.skills-container-inView {
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+
 .bi-check2-circle {
   color: green;
   position: absolute;
@@ -295,10 +308,19 @@ strong {
   font-weight: 600;
 }
 
+@media (min-width: 768px) {
+  .administrative, .technical {
+    transform: translateX(-50%);
+  }
+  .media, .personal, .digital {
+    transform: translateX(50%);
+  }
+}
 .contact-information {
   border: 1px solid lightgrey;
   border-radius: 15px;
   padding: 50px 0 50px;
+  opacity: 0;
 }
 .contact-information p {
   line-height: 0.5;
@@ -310,6 +332,19 @@ strong {
 .contact-section {
   padding: 30px 0 100px;
   background-color: #5a615b;
+}
+.contact-section h1 {
+  opacity: 0;
+}
+
+.contact-section-inView h1 {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.contact-section-inView .contact-information {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
 }
 
 .about-section {
@@ -323,7 +358,6 @@ strong {
   border-radius: 10px;
   margin: auto;
   top: -50px;
-  rotate: -5deg;
   background-color: rgba(175, 179, 184, 0.4078431373);
 }
 
@@ -331,11 +365,12 @@ strong {
   width: 70%;
   max-width: 350px;
   background: linear-gradient(145deg, #b8b4af, #1d1d1d);
+  transform: translateY(30%);
+  opacity: 0;
 }
 
 .about-me {
   background-color: rgb(251, 251, 251);
-  rotate: 5deg;
   padding: 20px;
   border-radius: 5px;
 }
@@ -351,6 +386,31 @@ strong {
   max-width: 200px;
   bottom: 40%;
   right: 60%;
+  opacity: 0;
+}
+
+.about-section-inView .about-container {
+  rotate: -5deg;
+  transition: rotate 1s ease-in-out;
+  transition-delay: 2s;
+}
+
+.about-section-inView .about-me-photo {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s ease-in-out;
+}
+
+.about-section-inView .about-me-signature {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  transition-delay: 0.8s;
+}
+
+.about-section-inView .about-me {
+  rotate: 5deg;
+  transition: rotate 1s ease-in-out;
+  transition-delay: 2s;
 }
 
 html {
@@ -371,6 +431,12 @@ header {
 .content-heading {
   font-size: 2.4rem;
   font-weight: 400;
+  opacity: 0;
+}
+
+.content-heading-inView {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
 }
 
 #educational-background {
